@@ -26,7 +26,7 @@ const Header = ({ isOpen, setIsOpen }) => {
     };
 
     return (
-        <header className="fixed pt-8 lg:pt-[40px] right-1/2 translate-x-1/2 z-10 content flex items-center justify-between">
+        <header className="fixed py-4 right-1/2 translate-x-1/2 z-10 content flex items-center justify-between bg-white">
             <div className="flex items-center justify-between gap-3">
                 <img src="/Logo.svg" alt="Positivus logo" />
                 <span className="font-medium text-[40px]">Positivus</span>
