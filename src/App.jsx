@@ -5,6 +5,7 @@ import ServicesSection from "./sections/ServicesSection";
 import MakeThingsSection from "./sections/MakeThingsSection";
 import CasesSection from "./sections/CasesSection";
 import WorkingProcSection from "./sections/WorkingProcSection";
+import ContactSection from "./sections/ContactSection";
 
 function App() {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,6 +17,7 @@ function App() {
             <MakeThingsSection />
             <CasesSection />
             <WorkingProcSection />
+            <ContactSection />
         </main>
     );
 }
