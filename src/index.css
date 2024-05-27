@@ -9,7 +9,7 @@
         @apply max-w-[1240px] w-full mx-auto px-5;
     }
     .blackButton {
-        @apply flex items-center justify-center py-5 px-9 rounded-[14px] bg-black text-white transition hover:scale-105;
+        @apply flex items-center justify-center py-5 px-9 rounded-[14px] bg-black text-white transition hover:scale-105 active:scale-100;
     }
 }
 
@@ -21,39 +21,21 @@
     color: #191a23;
 }
 
-.active {
-    overflow: hidden;
+.scrollbar-none {
+    scrollbar-width: none;
 }
 
-@keyframes mobileLine {
+.fadeNav {
+    animation: fadeFromRight .2s ease-in-out;
+}
+
+@keyframes fadeFromRight {
     0% {
+        opacity: 0;
         transform: translateX(100%);
     }
-
-    50% {
-        transform: translateX(-150%);
-    }
-
     100% {
-        transform: translateX(100%);
+        opacity: 1;
+        transform: translateX(0);
     }
-
-}
-
-.mobileLine {
-    animation: mobileLine 5s infinite linear;
-}
-
-@keyframes line {
-    0% {
-        transform: translateX(120%);
-    }
-
-    100% {
-        transform: translateX(-120%);
-    }
-}
-
-.line {
-    animation: line 5s infinite linear;
 }

@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-
 const logotypes = [
     "/amazon.png",
     "/dribble.png",
@@ -10,17 +8,6 @@ const logotypes = [
 ];
 
 const HeroSection = () => {
-    const [screenSize, setScreenSize] = useState(window.screen.width);
-    useEffect(() => {
-        window.addEventListener("resize", () =>
-            setScreenSize(window.screen.width)
-        );
-        return () => {
-            window.removeEventListener("resize", () =>
-                setScreenSize(window.screen.width)
-            );
-        };
-    }, []);
     return (
         <section className="content pt-[200px] flex flex-col gap-16 overflow-x-hidden">
             <div className="flex flex-col-reverse gap-5 sm:gap-0 lg:flex-row lg:items-center justify-between">
@@ -43,11 +30,7 @@ const HeroSection = () => {
                     className="max-w-[600px]"
                 />
             </div>
-            <div
-                className={`flex gap-9 width-full justify-between items-center transition ${
-                    screenSize <= 1070 ? "mobileLine" : ""
-                }`}
-            >
+            <div className="flex gap-9 width-full justify-between items-center transition overflow-x-auto scrollbar-none">
                 {logotypes.map((logotype) => (
                     <img key={logotype} src={logotype} alt="Logotype" />
                 ))}

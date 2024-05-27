@@ -20,7 +20,7 @@ const ContactSection = () => {
                         onChange={setSelectedOption}
                     />
                 </div>
-                <div className="flex flex-col gap-[25px] mt-10 w-full lg:max-w-[556px]">
+                <form className="flex flex-col gap-[25px] mt-10 w-full lg:max-w-[556px]">
                     <div className="flex flex-col gap-[5px] w-full">
                         <label htmlFor="name">Name</label>
                         <input
@@ -34,7 +34,7 @@ const ContactSection = () => {
                     <div className="flex flex-col gap-[5px] w-full">
                         <label htmlFor="email">Email*</label>
                         <input
-                            type="text"
+                            type="email"
                             name="contact"
                             id="email"
                             placeholder="Email"
@@ -46,14 +46,15 @@ const ContactSection = () => {
                         <textarea
                             placeholder="Message"
                             name="contact"
+                            
                             id="message"
                             cols="30"
                             rows="10"
                             className="h-[190px] px-[30px] py-[18px] border rounded-[14px] resize-none w-full"
                         ></textarea>
                     </div>
-                </div>
-                <button className="blackButton mt-10 lg:max-w-[556px] w-full">
+                </form>
+                <button type="submit" name="contact" className="blackButton mt-10 lg:max-w-[556px] w-full">
                     Send Message
                 </button>
             </div>

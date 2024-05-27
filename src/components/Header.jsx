@@ -45,7 +45,7 @@ const Header = ({ isOpen, setIsOpen }) => {
             ) : (
                 isOpen && (
                     <div
-                        className={`fixed z-10 flex transition-all fromRight items-center justify-center top-0 right-0 bg-black w-full md:w-2/3 lg:w-1/3 h-screen`}
+                        className={`fadeNav fixed z-10 flex transition-all fromRight items-center justify-center top-0 right-0 bg-black w-full md:w-2/3 lg:w-1/3 h-screen`}
                     >
                         <nav className="flex flex-col items-center gap-10">
                             {navLinks.map((navLink) => (
