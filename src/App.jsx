@@ -9,19 +9,19 @@ import ContactSection from "./sections/ContactSection";
 import Footer from "./components/Footer";
 
 function App() {
-    const [isOpen, setIsOpen] = useState(false);
-    return (
-        <main className={`relative ${isOpen ? "w-screen overflow-y-hidden": ""}`}>
-            <Header isOpen={isOpen} setIsOpen={setIsOpen} />
-            <HeroSection />
-            <ServicesSection />
-            <MakeThingsSection />
-            <CasesSection />
-            <WorkingProcSection />
-            <ContactSection />
-            <Footer />
-        </main>
-    );
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <main className={`relative ${isOpen ? "w-screen overflow-y-hidden" : ""}`}>
+      <Header isOpen={isOpen} setIsOpen={setIsOpen} />
+      <HeroSection />
+      <ServicesSection />
+      <MakeThingsSection />
+      <CasesSection />
+      <WorkingProcSection />
+      <ContactSection />
+      <Footer />
+    </main>
+  );
 }
 
 export default App;

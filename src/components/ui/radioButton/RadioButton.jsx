@@ -1,7 +1,6 @@
 import React from 'react';
 
 const RadioButton = ({ options, name, selectedValue, onChange }) => {
-  console.log(selectedValue )
   return (
     <div className="flex space-x-[35px]">
       {options.map((option) => (
@@ -17,7 +16,7 @@ const RadioButton = ({ options, name, selectedValue, onChange }) => {
           <span className={`w-[28px] h-[28px] rounded-full border flex items-center justify-center border-black`}>
             {selectedValue === option.value && <span className="w-[16px] h-[16px] bg-green rounded-full"></span>}
           </span>
-          <span className="ml-2">{option.label}</span>
+          <span className="ml-2 text-sm sm:text-base">{option.label}</span>
         </label>
       ))}
     </div>

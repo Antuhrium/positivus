@@ -5,37 +5,22 @@
 @tailwind utilities;
 
 @layer components {
-    .content {
-        @apply max-w-[1240px] w-full mx-auto px-5;
-    }
-    .blackButton {
-        @apply flex items-center justify-center py-5 px-9 rounded-[14px] bg-black text-white transition hover:scale-105 active:scale-100;
-    }
+  .content {
+    @apply max-w-[1240px] w-full mx-auto px-5;
+  }
+  .blackButton {
+    @apply flex items-center justify-center py-5 px-9 rounded-[14px] bg-black text-white transition hover:scale-105 active:scale-100;
+  }
 }
 
 * {
-    font-family: "Space Grotesk", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-size: 20px;
-    color: #191a23;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-size: 20px;
+  color: #191a23;
 }
 
 .scrollbar-none {
-    scrollbar-width: none;
-}
-
-.fadeNav {
-    animation: fadeFromRight .2s ease-in-out;
-}
-
-@keyframes fadeFromRight {
-    0% {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  scrollbar-width: none;
 }
