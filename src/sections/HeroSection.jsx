@@ -43,7 +43,7 @@ const HeroSection = () => {
                     />
                 </FadeX>
             </div>
-            <div className="flex gap-9 width-full justify-between items-center transition overflow-x-auto scrollbar-none">
+            <div className="flex gap-9 overflow-hidden width-full justify-between items-center transition overflow-x-auto scrollbar-none">
                 {logotypes.map((logotype, i) => (
                     <FadeY fled={"top"} key={logotype} delay={i * 0.1 + 0.3}>
                         <img src={logotype} alt="Logotype" className="w-full min-w-[130px]" />

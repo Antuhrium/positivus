@@ -20,7 +20,7 @@ const WorkingProcItem = ({ item, index, isOpen, setIsOpen }) => {
           <div
             className={`transition-transform duration-300 w-3 md:w-4 h-0.5 md:h-1 bg-black
                         absolute ${
-                          isOpen === item.title ? " rotate-90 " : "rotate-0"
+                          isOpen === item.title ? "rotate-0 " : "rotate-90"
                         }`}
           />
         </div>
